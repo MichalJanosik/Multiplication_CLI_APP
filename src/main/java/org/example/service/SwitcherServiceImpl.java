@@ -1,5 +1,7 @@
 package org.example.service;
 
+import org.example.algorithm.CustomMultiplication;
+
 import java.math.BigInteger;
 
 public class SwitcherServiceImpl implements SwitcherService {
@@ -8,7 +10,7 @@ public class SwitcherServiceImpl implements SwitcherService {
     public String argumentSwitch(String arg, String n1, String n2) {
         switch (arg) {
             case "-a" -> {
-                return "Using built in algorithm";
+                return CustomMultiplication.twoStringsMultiply(n1, n2);
             }
             case "-b" -> {
                 return new BigInteger(n1)

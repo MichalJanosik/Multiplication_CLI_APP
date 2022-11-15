@@ -1,5 +1,7 @@
 package org.example.service;
 
+import java.math.BigInteger;
+
 public class SwitcherServiceImpl implements SwitcherService {
 
     @Override
@@ -9,7 +11,9 @@ public class SwitcherServiceImpl implements SwitcherService {
                 return "Using built in algorithm";
             }
             case "-b" -> {
-                return "Using BigInteger class";
+                return new BigInteger(n1)
+                        .multiply(new BigInteger(n2))
+                        .toString();
             }
             default -> {
                 return "Unexpected error";

@@ -1,6 +1,6 @@
-package org.example.service;
+package org.example.view;
 
-public class PrinterServiceImpl implements PrinterService {
+public class PrinterImpl implements Printer {
     @Override
     public void print(String message) {
         System.out.println(message);

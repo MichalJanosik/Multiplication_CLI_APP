@@ -1,17 +1,17 @@
 package org.example;
 
-import org.example.service.PrinterService;
+import org.example.view.Printer;
 import org.example.service.SwitcherService;
 import org.example.service.ValidationService;
 
 public class MultiplicationApp {
 
     private final ValidationService validationService;
-    private final PrinterService printerService;
+    private final Printer printerService;
     private final SwitcherService switcherService;
     private String[] args;
 
-    public MultiplicationApp(ValidationService validationService, PrinterService printerService, SwitcherService switcherService) {
+    public MultiplicationApp(ValidationService validationService, Printer printerService, SwitcherService switcherService) {
         this.validationService = validationService;
         this.printerService = printerService;
         this.switcherService = switcherService;

@@ -1,7 +1,7 @@
 package org.example.algorithm;
 
-public class CustomMultiplication {
-    public static String twoStringsMultiply(String n1, String n2) {
+public class CustomMultiplication implements Multiplication {
+    public String twoStringsMultiply(String n1, String n2) {
         if (n1.matches("0+") || n2.matches("0+")) {
             return "0";
         }

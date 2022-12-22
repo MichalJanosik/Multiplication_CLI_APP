@@ -19,7 +19,7 @@ public class CustomMultiplication implements Multiplication {
             i_n2 = 0;
 
             for (int j = lengthN2 - 1; j >= 0; j--) {
-                int digit2 = n2.charAt(i) - '0';
+                int digit2 = n2.charAt(j) - '0';
 
                 int sum = digit1 * digit2 + result[i_n1 + i_n2] + carry;
                 carry = sum / 10;
